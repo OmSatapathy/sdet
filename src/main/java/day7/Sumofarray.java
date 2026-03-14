@@ -47,6 +47,8 @@ public class Sumofarray {
 		System.out.println(set);
 		
 		System.out.println("........................");
+		System.out.println("........................");
+		
 		 for (int i = 0; i < 5; i++) {
 	            System.out.println(RandomStringUtils.randomAlphanumeric(10));
 	            
