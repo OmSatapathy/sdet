@@ -3,6 +3,8 @@ package day7;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.commons.lang3.RandomStringUtils;
+
 public class Sumofarray {
 
 	public static void main(String[] args) {
@@ -43,6 +45,11 @@ public class Sumofarray {
 		}
 		
 		System.out.println(set);
+		
+		
+		 for (int i = 0; i < 5; i++) {
+	            System.out.println(RandomStringUtils.randomAlphanumeric(10));
+	        }
 		
 	}
 
