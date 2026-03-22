@@ -12,7 +12,6 @@ public class Stringcompress {
 
 		for (int i = 0; i < ch.length; i++) {
 
-			// check next character safely
 			if (i < ch.length - 1 && ch[i] == ch[i + 1]) {
 				count++;
 			} else {
