@@ -1,6 +1,7 @@
 package day1;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class SecondHighest {
 
@@ -40,35 +41,50 @@ public class SecondHighest {
 		String s2 = "world";
 
 		s1 = s1 + s2;
-		
-		s2 = s1.substring(0, s1.length()-s2.length());
-		s1= s1.substring(s2.length());
-		
+
+		s2 = s1.substring(0, s1.length() - s2.length());
+		s1 = s1.substring(s2.length());
+
 		System.out.println(s1);
 		System.out.println(s2);
-		
-		// string compress 
-		
-		String str2 ="aabbcccddeeffffs";
-		
+
+		// string compress
+
+		String str2 = "aabbcccddeeffffs";
+
 		char[] ch = str2.toCharArray();
-		int count=1;
+		int count = 1;
 		StringBuilder bs = new StringBuilder();
-		
-		
-		for(int i =0; i< ch.length-1; i++) {
-			
-			if(ch[i]==ch[i+1]) {
+
+		for (int i = 0; i < ch.length - 1; i++) {
+
+			if (ch[i] == ch[i + 1]) {
 				count++;
-			}
-			else {
+			} else {
 				bs.append(ch[i]).append(count);
-				count=1;
+				count = 1;
 			}
 		}
-		
+
 		System.out.println(bs.toString());
 
+		// rotate
+
+		int[] arr3 = { 34, 7, 8, 73, 6, 9, 62 };
+
+		int num = 4;
+		int j;
+		for (int i = 0; i < num; i++) {
+			int first = arr3[0];
+
+			for (j = 0; j < arr3.length-1; j++) {
+				arr3[j] = arr3[j + 1];
+			}
+			arr3[j] = first;
+		}
+
+		
+		System.out.println(Arrays.toString(arr3));
 	}
 
 }
