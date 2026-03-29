@@ -20,9 +20,7 @@ public class Iterator {
 			System.out.println(string);
 		//	lst.add("prakash"); will create cuncorrentmodification exception
 
-		}
-		
-		
+		}	
 	}
 
 }
