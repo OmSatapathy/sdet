@@ -13,7 +13,8 @@ public class Iterator {
 		lst.add("sam");
 		lst.add("dinesh");
 		lst.add("malay");
-
+		lst.add("kedar");
+		
 		java.util.Iterator<String> itr = lst.iterator();
 		while (itr.hasNext()) {
 			String string = (String) itr.next();
