@@ -39,6 +39,23 @@ public class Allzeroright {
 		}
 
 		System.out.println(sb);
+		
+		
+		String stp ="omprakash349sata";
+		String value= stp.replaceAll("[^0-9]", "");
+		int intvalue = Integer.parseInt(value);
+		System.out.println(value);
+		System.out.println("*****");
+		
+		int revnum=0;
+		int rem;
+		
+		while(intvalue>0) {
+			rem = intvalue%10;
+			revnum = revnum*10+ rem;
+			intvalue= intvalue/10;
+		}
+		System.out.println(revnum);
 	}
 
 }
