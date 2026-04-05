@@ -18,6 +18,16 @@ public class PairofSum {
 			}
 		}
 
+		String str = "HELLO WORLD";
+
+		for (int i = 0; i < str.length(); i++) {
+			char character = str.charAt(i);
+			if (65 <= character && character <= 90) {
+				character = (char) ((character + 32));
+			}
+			System.out.print(character);
+		}
+
 	}
 
 }
