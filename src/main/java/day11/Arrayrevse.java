@@ -19,6 +19,7 @@ public class Arrayrevse {
 		
 		for(int p: arr) {
 			System.out.println(p);
+			
 		}
 	}
 
