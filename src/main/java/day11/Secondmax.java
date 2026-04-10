@@ -18,6 +18,21 @@ public class Secondmax {
 
 		
 		System.out.println(secmax);
+		System.out.println(max);
+		
+	
+		      String str = "abc d ef";
+		      String rev ="";
+		      StringBuilder bs = new StringBuilder();
+		      String[] cp = str.split(" ");
+		      
+		      
+		      for(int i = cp.length-1 ; i>=0; i-- ) {
+		    	  bs.append(cp[i]).append(" ");
+		      }
+		      
+		      System.out.println(bs);
+		    
 	}
 
 }
